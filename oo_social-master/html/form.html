@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+
+<body>
+    <div class="d-flex w-100 h-100 flex-column ">
+
+        <!--navbar-->
+        <header class="masthead mb-auto bg-dark">
+            <nav class="navbar navbar-dark bg-dark">
+                <a class="navbar-brand" href="../index.html">#OUT OF SOCIAL</a>
+                <ul class="nav justify-content-end scroll-me">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">il progetto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">monitora il tuo tempo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">qualche consiglio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">chi siamo</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="py-5 text-center">
+            <h2>Sei pronto?!</h2>
+            <p class="lead">Compila questo breve form e sfida te stesso e i tuoi amici a farne a meno per 24 ore!
+            </p>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12 ">
+                <form action="../controller/form.php" method="POST">
+
+                    <h4 class="mb-3">Qual’é il social dove passi più tempo?</h4>
+                    <div class="d-block">
+                        <div class="custom-control custom-radio">
+                            <input id="Facebook" name="social" type="radio" class="custom-control-input" checked value="Facebook" required>
+                            <label class="custom-control-label" for="Facebook">Facebook</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="Instagram" name="social" type="radio" class="custom-control-input" value="Instagram" required>
+                            <label class="custom-control-label" for="Instagram">Instagram</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="Twitter" name="social" type="radio" class="custom-control-input" value="Twitter" required>
+                            <label class="custom-control-label" for="Twitter">Twitter</label>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+
+                    <h4 class="mb-3">Quanti anni hai?</h4>
+                    <div class="d-block">
+                        <div class="custom-control custom-radio">
+                            <input id="1" name="age" type="radio" class="custom-control-input" checked value="age_14" required>
+                            <label class="custom-control-label" for="1">&#60;14</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="2" name="age" type="radio" class="custom-control-input" value="age_18" required>
+                            <label class="custom-control-label" for="2">14 - 18</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="3" name="age" type="radio" class="custom-control-input" value="age_24" required>
+                            <label class="custom-control-label" for="3">19-24</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="4" name="age" type="radio" class="custom-control-input" value="age_34" required>
+                            <label class="custom-control-label" for="4">25 - 34</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="5" name="age" type="radio" class="custom-control-input" value="age_50" required>
+                            <label class="custom-control-label" for="5">35 - 50</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="6" name="age" type="radio" class="custom-control-input" value="age_51" required>
+                            <label class="custom-control-label" for="6">&#62;50</label>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+
+                    <h4 class="mb-3">Qual’é il social dove passi più tempo?</h4>
+                    <div class="d-block">
+                        <div class="custom-control custom-radio">
+                            <input id="Facebook2" name="social2" type="radio" class="custom-control-input"  checked value="Facebook" required>
+                            <label class="custom-control-label" for="Facebook2">Facebook</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="Instagram2" name="social2" type="radio" class="custom-control-input" value="Instagram" required>
+                            <label class="custom-control-label" for="Instagram2">Instagram</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="Twitter2" name="social2" type="radio" class="custom-control-input" value="Twitter" required>
+                            <label class="custom-control-label" for="Twitter2">Twitter</label>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+
+
+
+
+
+
+
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2019 #OUTOFSOCIAL</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+    </div>
+</body>
+
+</html>
